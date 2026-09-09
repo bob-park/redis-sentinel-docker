@@ -1,0 +1,9 @@
+services:
+  keepalived:
+    image: ghcr.io/bob-park/redis-sentinel
+    build:
+      dockerfile: ./Dockerfile
+      x-bake:
+        platforms:
+          - linux/amd64
+          - linux/arm64
