@@ -1,5 +1,5 @@
 services:
-  keepalived:
+  sentinel:
     image: ghcr.io/bob-park/redis-sentinel
     build:
       dockerfile: ./Dockerfile
